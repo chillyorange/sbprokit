@@ -30,9 +30,9 @@ $grid-gutter: 2% !default;
 
 // FONT FAMILY
 // ---------------------------------------------------------------------------
-$text-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$text-font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
 $monospace-font-family: Consolas, Monaco, 'Courier New', monospace !default;
-$headings-font-family: $text-font-family !default;
+$headings-font-family: 'Bree Serif', $text-font-family !default;
 $buttons-font-family: $text-font-family !default;
 $input-font-family: $text-font-family !default;
 
@@ -41,24 +41,26 @@ $input-font-family: $text-font-family !default;
 // ---------------------------------------------------------------------------
 
 // Text
-$color-text: #313439 !default;
-$color-headings: #0d0d0e !default;
+$color-text: #0C0033 !default;
+$color-headings: #0C0033 !default;
 
 // Links
 $color-link: #3794de !default;
 $color-link-hover: #f03c69 !default;
 
 // Button
-$color-button-primary: #1c86f2 !default;
+$color-button-primary: #2ED5D5 !default;
 $color-button-primary-text: #fff !default;
-$color-button-secondary: #313439 !default;
+$color-button-secondary: #9B59B6 !default;
 $color-button-secondary-text: #fff !default;
+$color-button-black: #0C0033 !default;
+$color-button-black-text: #fff !default;
 
 // States
-$color-error: #f03c69 !default;
-$color-success: #35beb1 !default;
-$color-warning: #f7ba45 !default;
-$color-focus: #1c86f2 !default;
+$color-error: #FF0048 !default;
+$color-success: #1ABC9C !default;
+$color-warning: #F1C40F !default;
+$color-focus: #3498DB !default;
 
 // Extra
 $color-inverted: #fff !default;
@@ -204,7 +206,7 @@ $input-padding-large-rl: 12px !default;
 $input-textarea-padding-tb: 8px !default;
 
 // States
-$input-border-width: 1px !default;
+$input-border-width: 2px !default;
 $input-border-color: $color-lightgray !default;
 $input-background-color: #fff !default;
 $input-box-shadow: none !default;

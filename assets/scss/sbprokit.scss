@@ -1,3 +1,87 @@
 @import "../kube/src/_scss/variables";
 @import "../kube/src/_scss/mixins";
 @import "../kube/src/_scss/components";
+
+$default-container-width: 1180px;
+
+.container {
+	max-width: $default-container-width;
+	margin: 0px auto;
+
+	body > &:first-child {
+		margin-top: 40px;
+	}
+}
+
+.p-a-20 {
+	padding: 20px;
+}
+
+.m-b-20 {
+	margin-bottom: 20px;
+}
+
+.m-b-40 {
+	margin-bottom: 40px;
+}
+
+.m-b-60 {
+	margin-bottom: 60px;
+}
+
+/* additional buttons */
+.button {
+	&.error {
+    	@include button(#fff, $color-error);
+    }
+    &.active {
+    	@include button(#fff, $color-focus);
+    }
+    &.success {
+    	@include button(#fff, $color-success);
+    }
+    &.warning {
+    	@include button(#fff, $color-warning);
+    }
+    &.black {
+    	@include button(#fff, $color-button-black);
+    }
+}
+
+/* end additional buttons */
+
+/* forms */
+
+input {
+	&.round {
+		border-radius: 50px;
+	}
+}
+
+.prepend {
+	& > span {
+		background-color: transparent;
+	}
+	&.icon {
+		input {
+			border-left: 0px;
+		}
+	}
+}
+
+.append {
+	& > span {
+		background-color: transparent;
+	}
+	&.icon {
+		input {
+			border-right: 0px;
+		}
+	}
+}
+
+/* end forms */
+
+.bg-secondary {
+	background-color: $color-black;
+}

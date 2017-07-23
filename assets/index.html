@@ -6,20 +6,440 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
+
     <!-- Kube CSS -->
     <link rel="stylesheet" href="css/sbprokit.css">
 
 </head>
 <body>
 
-	<div class="row">
-		<div class="col col-6">
-			<h1>Hello, world!</h1>
-		</div><!-- /.col -->
-		<div class="col col-6">
-			<h1>Hello, world!</h1>
-		</div><!-- /.col -->
-	</div><!-- /.row -->
+	<div class="container">
+
+		<div class="row col-12 m-b-60" id="buttons">
+
+			<div class="col col-12 m-b-60">
+				<h2>Buttons</h2>
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Regular Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div>
+					<button class="button">Primary Button</button>
+					<button class="button secondary">Secondary Button</button>
+					<button class="button black">Dark Button</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Additional Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div>
+					<button class="button active">Active Button</button>
+					<button class="button success">Success Button</button>
+					<button class="button warning">Warning Button</button>
+					<button class="button error">Error Button</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Outline Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div>
+					<button class="button outline">Primary Button</button>
+					<button class="button outline secondary">Secondary Button</button>
+					<button class="button outline black">Dark Button</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Pill Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div class="m-b-20">
+					<button class="button round">Primary Button</button>
+					<button class="button round secondary">Secondary Button</button>
+					<button class="button round black">Dark Button</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Button Sizes</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div class="m-b-20">
+					<a href="#" class="button small" role="button">Link</a>
+					<button class="button secondary small">Button</button>
+					<button class="button black small">Button</button>
+				</div>
+
+				<div class="m-b-20">
+					<a href="#" class="button big" role="button">Link</a>
+					<button class="button secondary big">Button</button>
+					<button class="button black big">Button</button>
+				</div>
+
+				<div>
+					<a href="#" class="button large" role="button">Link</a>
+					<button class="button secondary large">Button</button>
+					<button class="button black large">Button</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Uppercase Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<a href="#" class="button upper" role="button">Link</a>
+				<button class="button secondary upper">Button</button>
+				<button class="button black upper">Button</button>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Width Variations</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div class="m-b-20">
+					<button class="button w100">Button 100%</button>
+				</div>
+				<div class="m-b-20">
+					<button class="button w75">Button 75%</button>
+				</div>
+				<div class="m-b-20">
+					<button class="button w50">Button 50%</button>
+				</div>
+				<div class="m-b-20">
+					<button class="button w25">Button 25%</button>
+				</div>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Inverted Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60 bg-secondary p-a-20">
+
+				<a href="#" class="button inverted" role="button">Link</a>
+				<button class="button inverted outline">Button</button>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Icon Buttons</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<button class="button"><i class="kube-calendar"></i></button>
+				<button class="button secondary"><i class="kube-calendar"></i> Change</button>
+
+				<button class="button outline"><i class="kube-search"></i></button>
+				<button class="button secondary outline"><i class="kube-search"></i> Search</button>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+				<h3>Button Dropdowns</h3>
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-60">
+
+				<div class="row">
+
+					<div class="col col-6">
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown1" class="button large">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown1">
+							    <a href="" class="close show-sm"></a>
+							    <ul>
+							        <li><a href="">This link one</a></li>
+							        <li><a href="">This link two</a></li>
+							        <li><a href="">This link three</a></li>
+							        <li><a href="">This link four</a></li>
+							    </ul>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown2" class="button secondary big">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown2">
+							    <a href="" class="close show-sm"></a>
+							    <ul>
+							        <li><a href="">This link one</a></li>
+							        <li><a href="">This link two</a></li>
+							        <li><a href="">This link three</a></li>
+							        <li><a href="">This link four</a></li>
+							    </ul>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown3" class="button black">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown3">
+							    <a href="" class="close show-sm"></a>
+							    <ul>
+							        <li><a href="">This link one</a></li>
+							        <li><a href="">This link two</a></li>
+							        <li><a href="">This link three</a></li>
+							        <li><a href="">This link four</a></li>
+							    </ul>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown4" class="button small black">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown4">
+							    <a href="" class="close show-sm"></a>
+							    <ul>
+							        <li><a href="">This link one</a></li>
+							        <li><a href="">This link two</a></li>
+							        <li><a href="">This link three</a></li>
+							        <li><a href="">This link four</a></li>
+							    </ul>
+							</div>
+						</div>
+
+					</div><!-- /.col -->
+
+					<div class="col col-6">
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown5" class="button large outline">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown5">
+								<div class="p-a-20">
+								    <p>
+								    	Suspendisse et tincidunt nibh. Cras mollis urna mauris, nec sollicitudin nisl gravida nec. In nec sem ut dui consequat maximus. Vivamus vel hendrerit massa, facilisis vehicula massa. Etiam a turpis quis diam aliquet pretium. Phasellus ut dapibus felis, ac vestibulum justo. Vivamus purus ligula, feugiat non eros a, dictum feugiat purus.
+								    </p>
+	    							<a href="#" data-action="dropdown-close">Close</a>
+    							</div>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown6" class="button secondary big outline">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown6">
+							    <div class="p-a-20">
+								    <p>
+								    	Suspendisse et tincidunt nibh. Cras mollis urna mauris, nec sollicitudin nisl gravida nec. In nec sem ut dui consequat maximus. Vivamus vel hendrerit massa, facilisis vehicula massa. Etiam a turpis quis diam aliquet pretium. Phasellus ut dapibus felis, ac vestibulum justo. Vivamus purus ligula, feugiat non eros a, dictum feugiat purus.
+								    </p>
+	    							<a href="#" data-action="dropdown-close">Close</a>
+    							</div>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown7" class="button black outline">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown7">
+							    <div class="p-a-20">
+								    <p>
+								    	Suspendisse et tincidunt nibh. Cras mollis urna mauris, nec sollicitudin nisl gravida nec. In nec sem ut dui consequat maximus. Vivamus vel hendrerit massa, facilisis vehicula massa. Etiam a turpis quis diam aliquet pretium. Phasellus ut dapibus felis, ac vestibulum justo. Vivamus purus ligula, feugiat non eros a, dictum feugiat purus.
+								    </p>
+	    							<a href="#" data-action="dropdown-close">Close</a>
+    							</div>
+							</div>
+						</div>
+
+						<div class="m-b-20">
+							<button data-component="dropdown" data-target="#my-dropdown8" class="button small black outline">Show Dropdown <span class="caret down"></span></button>
+							<div class="dropdown hide" id="my-dropdown8">
+							    <div class="p-a-20">
+								    <p>
+								    	Suspendisse et tincidunt nibh. Cras mollis urna mauris, nec sollicitudin nisl gravida nec. In nec sem ut dui consequat maximus. Vivamus vel hendrerit massa, facilisis vehicula massa. Etiam a turpis quis diam aliquet pretium. Phasellus ut dapibus felis, ac vestibulum justo. Vivamus purus ligula, feugiat non eros a, dictum feugiat purus.
+								    </p>
+	    							<a href="#" data-action="dropdown-close">Close</a>
+    							</div>
+							</div>
+						</div>
+
+					</div><!-- /.col -->
+
+				</div><!-- /.row -->
+
+			</div><!-- /.col -->
+
+		</div><!-- /.row -->
+
+		<div class="row" id="forms">
+
+			<div class="col col-12 col-12 m-b-60">
+
+				<h2>Forms</h2>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+
+				<h3>Inputs</h3>
+
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-40">
+
+				<div class="row gutters">
+
+					<div class="col col-6">
+
+						<div class="form-item">
+					        <input type="text" class="big" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="small" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="big success" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="success" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="small success" placeholder="Deactivated Input">
+					    </div>
+
+					</div><!-- /.col -->
+
+					<div class="col col-6">
+
+						<div class="form-item">
+					        <input type="text" class="big error" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="error" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="small error" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="big" disabled placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="" disabled placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="small" disabled placeholder="Deactivated Input">
+					    </div>
+
+					</div><!-- /.col -->
+
+				</div><!-- /.row -->
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+
+				<h3>Input Vaiations</h3>
+
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-40">
+
+				<div class="row gutters">
+
+					<div class="col col-6">
+
+						<div class="form-item">
+					        <div class="prepend">
+					            <span>$</span>
+					            <input type="text">
+					        </div>
+					    </div>
+
+					    <div class="form-item">
+					        <div class="append">
+					            <input type="text"><span>$</span>
+					        </div>
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="round big" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="round" placeholder="Deactivated Input">
+					    </div>
+
+					    <div class="form-item">
+					        <input type="text" class="round small" placeholder="Deactivated Input">
+					    </div>
+
+					</div><!-- /.col -->
+
+					<div class="col col-6">
+
+						<div class="form-item">
+					        <div class="append">
+					            <input type="text" name="search" placeholder="Search">
+					            <button class="button outline">Go</button>
+					        </div>
+					    </div>
+
+					    <div class="form-item">
+					        <div class="append">
+					            <input type="text" name="search" placeholder="Search">
+					            <button class="button secondary">Go Later</button>
+					        </div>
+					    </div>
+
+					    <div class="form-item">
+					        <div class="prepend icon">
+					            <span><i class="kube-search"></i></span>
+					            <input type="text">
+					        </div>
+					    </div>
+
+					    <div class="form-item">
+					        <div class="append icon">
+					            <input type="text"><span><i class="kube-calendar"></i></span>
+					        </div>
+					    </div>
+
+					</div><!-- /.col -->
+
+				</div><!-- /.row -->
+
+			</div><!-- /.col -->
+
+		</div><!-- /.row -->
+
+	</div><!-- /.container -->
 
     <!-- Kube JS + jQuery are used for some functionality, but are not required for the basic setup -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
