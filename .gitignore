@@ -1,0 +1,8 @@
+#node
+node_modules
+
+#build
+build
+
+#codekit
+config.codekit3
