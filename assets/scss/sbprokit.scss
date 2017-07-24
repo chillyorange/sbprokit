@@ -88,10 +88,35 @@ input {
 .nav {
 	display: flex;
     align-items: center;
-    background-color: $color-navbar-light;
     height: 80px;
     margin-bottom: 24px;
     border-radius: $nav-border-radius;
+
+    /* left - center -right */
+    &.l-c-r {
+    	justify-content: space-between;
+    }
+
+    &.l-l-r {
+    	nav {
+    		flex: 1 1 auto;
+    	}
+    }
+
+    /* left - center - center */
+    &.l-r-r {
+    	nav {
+    		flex: 1 1 auto;
+    		display: flex;
+    		justify-content: flex-end;
+
+    	}
+    }
+
+    /* center - center - center */
+    &.c.c.c {
+
+    }
 
     .navbar-brand {
     	display: inline-block;
@@ -117,6 +142,48 @@ input {
 
     		&:hover {
     			text-decoration: underline;
+    		}
+    	}
+    }
+
+    & .buttons {
+    	button:first-child, .button:first-child {
+    		margin-left: 10px;
+    	}
+    }
+
+    &.outline {
+    	border-width: $nav-border-width;
+    	border-style: solid;
+    	&.black {
+    		border-color: $color-black;
+    	}
+    	&.darkgray {
+    		border-color: $color-darkgray;
+    	}
+    	&.midgray {
+    		border-color: $color-midgray;
+    	}
+    	&.gray {
+    		border-color: $color-gray;
+    	}
+    	&.lightgray {
+    		border-color: $color-lightgray;
+    	}
+    	&.silver {
+    		border-color: $color-silver;
+    	}
+    	&.aluminum {
+    		border-color: $color-aluminum;
+    	}
+    }
+
+    &.light {
+    	background-color: $color-navbar-light;
+
+    	nav {
+    		& > a {
+    			color: $color-navbar-light-text;
     		}
     	}
     }
