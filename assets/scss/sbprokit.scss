@@ -82,6 +82,58 @@ input {
 
 /* end forms */
 
+
+/* navbars */
+
+.nav {
+	display: flex;
+    align-items: center;
+    background-color: $color-navbar-light;
+    height: 80px;
+    margin-bottom: 24px;
+    border-radius: $nav-border-radius;
+
+    .navbar-brand {
+    	display: inline-block;
+    	margin-right: 25px;
+    	margin-left: 20px;
+
+    	a {
+    		display: flex;
+    		align-items: center;
+
+    		img {
+    			max-height: 40px;
+    		}
+    	}
+    }
+
+    nav {
+    	& > a {
+    		color: $color-navbar-light-text;
+    		text-decoration: none;
+    		display: inline-block;
+    		margin: 0px 10px;
+
+    		&:hover {
+    			text-decoration: underline;
+    		}
+    	}
+    }
+
+    &.dark {
+    	background-color: $color-navbar-dark;
+
+    	nav {
+    		& > a {
+    			color: $color-navbar-dark-text;
+    		}
+    	}
+    }
+}
+
+/* end navbars */
+
 .bg-secondary {
 	background-color: $color-black;
 }
