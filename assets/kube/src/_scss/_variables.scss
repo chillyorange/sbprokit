@@ -81,11 +81,16 @@ $color-navbar-light-text: #000 !default;
 $color-navbar-dark: $color-button-black !default;
 $color-navbar-dark-text: #fff !default;
 
+// RADIUS
+// ---------------------------------------------------------------------------
+
+$default-radius: 5px;
+
 // NAVBAR
 // ---------------------------------------------------------------------------
 
 // Navbar border radius
-$nav-border-radius: 5px;
+$nav-border-radius: $default-radius;
 
 // Navbar outline border width
 $nav-border-width: 2px;
@@ -190,7 +195,7 @@ $button-padding-large-rl: 36px !default;
 $button-font-weight: 500 !default;
 
 // Radius
-$button-border-radius: 5px !default;
+$button-border-radius: $default-radius !default;
 
 
 // INPUTS
@@ -241,7 +246,7 @@ $input-disabled-opacity: .6;
 $input-disabled-color: rgba(0, 0, 0, .5);
 
 // Radius
-$input-border-radius: 5px !default;
+$input-border-radius: $default-radius !default;
 
 
 // OVERLAY

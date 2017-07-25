@@ -16,6 +16,23 @@
 
 	<div class="container">
 
+		<a href="#" class="button outline" data-component="offcanvas" data-target="#offcanvas-left" style="position: fixed; top: 20px; right: 20px">
+			<i class="kube-menu"></i>
+		</a>
+
+		<div id="offcanvas-left" class="hide offcanvas offcanvas-left">
+		    <nav>
+		        <ul>
+		            <li><a href="#buttons">Buttons</a></li>
+		            <li><a href="#forms">Forms</a></li>
+		            <li><a href="#navigation">Navigation</a></li>
+		            <li><a href="#labels">Labels</a></li>
+		            <li><a href="#tables">Tabels</a></li>
+		            <li><a href="#alerts">Alerts</a></li>
+		        </ul>
+		    </nav>
+		</div>
+
 		<div class="row m-b-60" id="buttons">
 
 			<div class="col col-12 m-b-60">
@@ -1234,6 +1251,57 @@
 	                    </tr>
 	                </tbody>
 	            </table>
+
+			</div><!-- /.col -->
+
+		</div><!-- /.row -->
+
+		<div class="row m-b-60" id="alerts">
+
+			<div class="col col-12 m-b-60">
+
+				<h2>Alerts</h2>
+
+			</div><!-- /.col -->
+
+			<div class="col col-4">
+
+				<h3>Alert Styles</h3>
+
+			</div><!-- /.col -->
+
+			<div class="col col-8 m-b-40">
+
+				<div class="message open" data-component="message">
+					You have 2 modules waiting to installation. <a href="#install">Install</a> <span class="close small"></span>
+				</div>
+
+				<div class="message error" data-component="message">
+					You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small"></span>
+				</div>
+
+				<div class="message success open" data-component="message">
+					You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small"></span>
+				</div>
+
+				<div class="message warning open" data-component="message">
+					<h5>Warning!</h5>
+					<p>
+						You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small"></span>
+					</p>
+				</div>
+
+				<div class="message focus open" data-component="message">
+					You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small"></span>
+				</div>
+
+				<div class="message black open" data-component="message">
+					You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small white"></span>
+				</div>
+
+				<div class="message inverted open" data-component="message">
+					You have 2 modules waiting to installation. <a href="">Install</a> <span class="close small"></span>
+				</div>
 
 			</div><!-- /.col -->
 
