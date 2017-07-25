@@ -61,7 +61,7 @@
     @include label(#fff, $color-error);
 }
 .label.warning {
-    @include label($color-black, $color-warning);
+    @include label(#fff, $color-warning);
 }
 .label.focus {
     @include label(#fff, $color-focus);
