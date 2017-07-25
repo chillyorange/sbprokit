@@ -92,11 +92,15 @@ input {
     margin-bottom: 24px;
     border-radius: $nav-border-radius;
 
+    padding-left: 20px;
+    padding-right: 20px;
+
     /* left - center -right */
     &.l-c-r {
     	justify-content: space-between;
     }
 
+    /* left - left - right */
     &.l-l-r {
     	nav {
     		flex: 1 1 auto;
@@ -114,14 +118,13 @@ input {
     }
 
     /* center - center - center */
-    &.c.c.c {
-
+    &.c-c-c {
+    	justify-content: center;
     }
 
     .navbar-brand {
     	display: inline-block;
     	margin-right: 25px;
-    	margin-left: 20px;
 
     	a {
     		display: flex;
