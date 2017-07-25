@@ -2,6 +2,8 @@
 {
 	color: $color-text;
 	background-color: $color-back;
+    transition: background-color $buttion-transition,
+                color $buttion-transition;
 
 	&:hover {
 	    color: $color-text;
@@ -18,8 +20,9 @@
         border-color: $color-back;
 
         &:hover {
-            color: rgba($color-back, .6);
-            border-color: rgba($color-back, .5);
+            color: $color-text;
+            border-color: $color-back;
+            background-color: $color-back;
         }
         &:disabled,
         &.disabled {
